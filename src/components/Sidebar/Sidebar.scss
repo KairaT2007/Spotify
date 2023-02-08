@@ -1,0 +1,54 @@
+.sidebar {
+    color: white;
+
+    padding: 25px;
+    box-sizing: border-box;
+
+    &__logo {
+        font-size: 30px;
+        font-weight: bold;
+
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+
+        padding: 30px 0;
+        box-sizing: border-box;
+
+        &__item {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+            text-decoration: none;
+            color: gray;
+
+            transition: color .5s ease-in-out;
+
+            .icon {
+                font-size: 25px;
+                opacity: 0.5;
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        &__item.active {
+            color: #fff;
+            
+            .icon {
+                opacity: 1;
+            }
+        }
+    }
+
+}
