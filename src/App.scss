@@ -13,6 +13,10 @@
   width: 100vw;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "Circular";
   src: url("./assets/fonts/CircularStd-Bold.otf");

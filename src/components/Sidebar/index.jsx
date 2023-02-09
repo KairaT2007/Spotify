@@ -46,7 +46,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar__logo">
         <BsSpotify style={{ fontSize: "40px" }} />
-        <span>Spotify</span>
+        <span>Ogogofy</span>
       </div>
       <div className='sidebar__links'>
         {

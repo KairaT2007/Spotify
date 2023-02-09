@@ -1,13 +1,19 @@
+import { useState } from 'react';
+import Router from './router/router';
+import { SongsContext } from './context/songs.context';
 
 //Styles
 import './App.scss';
-import Router from './router/router';
 
 function App() {
+  const [songs, setSongs] = useState([])
+
   return (
-    <div className="app">
-      <Router/>
-    </div>
+    <SongsContext.Provider value={{ songs, setSongs }}>
+      <div className="app">
+        <Router />
+      </div>
+    </SongsContext.Provider>
   );
 }
 
